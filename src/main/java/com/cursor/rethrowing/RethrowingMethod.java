@@ -9,6 +9,6 @@ public class RethrowingMethod {
     }
 
     public static void someMethod2() throws IOException {
-        throw new IOException("Exception has thrown from someMethod.");
+        throw new IOException("IOException has thrown from someMethod.");
     }
 }

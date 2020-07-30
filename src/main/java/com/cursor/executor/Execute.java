@@ -20,7 +20,7 @@ public class Execute {
         try {
             RethrowingMethod.someMethod();
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage() + "\nIOException caught in Execute.java");
         }
     }
 }
