@@ -12,16 +12,12 @@ public class SafeDivision {
         double secondNumber = scanner.nextDouble();
         while (true) {
             try {
-                if (firstNumber == 0 || secondNumber == 0) {
+                if (secondNumber == 0) {
                     throw new ArithmeticException("Do not enter ZERO as a Value!");
                 }
                 return firstNumber / secondNumber;
             } catch (ArithmeticException e) {
                 System.out.println(e.getMessage());
-                if (firstNumber == 0) {
-                    System.out.println("Please enter first number : ");
-                    firstNumber = scanner.nextDouble();
-                }
                 if (secondNumber == 0) {
                     System.out.println("Please enter again Second number : ");
                     secondNumber = scanner.nextDouble();
